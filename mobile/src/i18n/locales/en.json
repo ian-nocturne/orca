@@ -1760,7 +1760,11 @@
       "copyLoaded": "Copy loaded",
       "copyPathLabel": "Copy Markdown path",
       "copyPath": "Copy path",
-      "loading": "Loading document…"
+      "loading": "Loading document…",
+      "editLabel": "Edit Markdown",
+      "previewLabel": "Preview Markdown",
+      "preview": "Preview",
+      "fileUnavailable": "This file is outside the current workspace or is unavailable."
     },
     "nativeChatCardHeaderAction": {
       "collapse": "Collapse"
