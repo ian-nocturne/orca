@@ -61,6 +61,7 @@ describe('Markdown preview images', () => {
       worktree: 'id:wt',
       relativePath: 'docs/logo.svg'
     })
+  })
 
   it('previews file URLs inside the known remote workspace without reading phone files', async () => {
     const client = host()
