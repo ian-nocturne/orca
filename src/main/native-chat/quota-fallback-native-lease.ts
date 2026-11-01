@@ -63,8 +63,14 @@ export function createNativeQuotaLease(context: () => NativeQuotaLeaseContext) {
         ) {
           return null
         }
+        if (!ctx.deps.store.getConversation(cut.sessionId)) {
+          return null
+        }
         await ctx.deps.assertNoTerminalWriter?.(record)
-        if (!allowed(cut.sessionId, cut.turnItemId)) {
+        if (
+          !allowed(cut.sessionId, cut.turnItemId) ||
+          !ctx.deps.store.getConversation(cut.sessionId)
+        ) {
           return null
         }
         reserve()
